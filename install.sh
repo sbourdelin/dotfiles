@@ -1,7 +1,7 @@
 #!/bin/sh
 
 TREE_DIR="tree"
-DOTFILES_PWD="$(pwd)"
+DOTFILES_PWD="$(pwd -P)"
 DOTFILES_PWD="$DOTFILES_PWD/$TREE_DIR"
 
 info() {
