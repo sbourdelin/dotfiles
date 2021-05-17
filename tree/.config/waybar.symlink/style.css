@@ -1,0 +1,32 @@
+* {
+	border: none;
+	border-radius: 0;
+	font-family: monospace;
+	font-size: 9pt;
+	min-height: 0;
+}
+
+window {
+	background: #32302f;
+	color: #ebdbb2;
+}
+
+#workspaces button {
+	padding: 0 5px;
+	border: 1px solid transparent;
+    color: #ebdbb2
+}
+#workspaces button.visible { border: 1px solid #a89984; }
+#workspaces button.focused { border: 1px solid #8ec07c; }
+#workspaces button.urgent { border: 1px solid #cc241d; }
+
+/* all modules */
+#workspaces, #window, #mpd, #clock, #battery, #cpu, #memory, #temperature, #backlight, #network, #pulseaudio, #custom-media, #tray, #mode, #idle_inhibitor {
+    padding: 0 10px;
+    margin: 0 4px;
+}
+
+#window {
+	margin: 0 1em;
+	border-bottom: 1px solid #8ec07c;
+}
