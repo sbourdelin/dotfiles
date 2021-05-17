@@ -1,22 +1,19 @@
 # dotfiles
 
-## required
-* feh
-* ctags
-* gdb-dashboard
-
 ## configs
-* vim
-* i3gasp
-* gnupg
-* git
 * bash
+* dunst
+* gdb
+* git
+* gnupg
+* i3gasp
+* konsole
 * mail
 * msmtp
+* quilt
 * radare2
 * rofi
-* dunst
+* sway
 * tig
-* gdb
-* konsole
-* quilt
+* vim
+* waybar
