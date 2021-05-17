@@ -1,0 +1,146 @@
+set nocompatible				" breaks compatibility with original vi
+set cindent					" indent brace
+set history=1000				" lines of command history
+set showcmd					" show incomplete commands
+set hlsearch					" highlight searched-for phrases
+set incsearch					" highlight search as you type
+set tabpagemax=15
+set number					" print line number
+set ignorecase					" ignore case in search
+set mouse=a					" allow mouse usage
+set guioptions-=T				" delete toolbar
+set autoindent smartindent			" turn on auto/smart indenting
+set smarttab					" make <tab> and <backspace> smarter
+set tabstop=4					" how many column a tab count
+set softtabstop=4				" how many column a tab count in insert mode
+set shiftwidth=4				" how many column is indented with << and >>
+set backspace=eol,start,indent			" allow backspacing over indent, eol, & start
+set laststatus=2				" always show the status line
+set noswapfile
+"set nomodeline					" disable the possibility to set modeline options in file header (security risk)
+set scrolloff=3					" lock the scroll on top and bottom
+set colorcolumn=+0                              " highlight column at 'textwidth'
+set relativenumber                              " relative line number
+
+" font
+set guifont=Monospace\ 8 
+let mywinfont="Monospace:h8:cANSI"
+
+
+" Vundle Begin
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" plugins manager
+Plugin 'VundleVim/Vundle.vim'
+" sidepanel
+Plugin 'scrooloose/nerdtree'
+" navigate trough ctags
+Plugin 'taglist.vim'
+" navigate trough buffer
+"Plugin 'fholgado/minibufexpl.vim'
+" scheme mustang
+Plugin 'marcus/vim-mustang'
+" scheme irblack
+Plugin 'wgibbs/vim-irblack'
+" scheme distringuished
+Plugin 'Lokaltog/vim-distinguished'
+" scheme molokai
+Plugin 'tomasr/molokai'
+let g:rehash256 = 1                             " try to imitate the gui molokai
+" scheme atom
+Plugin 'gosukiwi/vim-atom-dark'
+" scheme seti
+Plugin 'trusktr/seti.vim'
+" comment
+Plugin 'tomtom/tcomment_vim'
+" powerline beautify status bar 
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+let g:airline#extensions#whitespace#mixed_indent_algo = 2 " change the mix-indent algo
+let g:airline_theme = 'badwolf'
+let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
+let g:airline#extensions#tabline#fnamemod = ':t' " Show just the filename
+" allow to decrypt gpg file on the fly
+Plugin 'jamessan/vim-gnupg'
+" kernel coding style by v0n
+" Plugin 'vivien/vim-addon-linux-coding-style'
+" auto-indent base on current directory files
+Plugin 'tpope/vim-sleuth'
+" syntax highlighter for c/cpp
+Plugin 'octol/vim-cpp-enhanced-highlight'
+" CtrlP file searcher
+Plugin 'kien/ctrlp.vim'
+let g:ctrlp_working_path_mode = 'a'             " set to current directory and ancestor only
+" autoclose braket, quote
+"Plugin 'Raimondi/delimitMate'
+" git wrapper
+Plugin 'tpope/vim-fugitive'
+" indent guide
+Plugin 'Yggdroot/indentLine'
+
+" Vundle end
+call vundle#end()
+filetype plugin indent on
+if &filetype==""
+  setfiletype sh
+endif
+
+""""""""functions""""""""
+" kernel style indentation
+function! Indent8Tab()
+  set tabstop=8
+  set softtabstop=8
+  set shiftwidth=8
+  set noexpandtab
+endfunction
+
+" sflphone style indentation
+function! Indent4Space()
+  set tabstop=4
+  set softtabstop=4
+  set shiftwidth=4
+  set expandtab
+endfunction
+
+" use to detect when line is greater then 80 char
+let g:c_80_detect = 0
+function! Change80Detect()
+  if g:c_80_detect == 1
+    match
+    let g:c_80_detect = 0
+  else
+    match ErrorMsg '\%>80v.\+'
+    let g:c_80_detect = 1
+  endif
+endfunction
+
+""""""""mapping""""""""
+"
+" my tool functions
+map             <F5>    <Esc>:call Indent8Tab()<CR>
+map             <F6>    <Esc>:call Indent4Space()<CR>
+map		<F8>	<Esc>:call Change80Detect()<CR>
+" NerdTree
+map		<F10>	:NERDTreeToggle<CR>
+" TagList
+map		<F11>	:TlistToggle<CR>
+let		Tlist_Use_Right_Window = 1
+" Ctags
+map		<F12>	:!/usr/bin/ctags -R --c++-kinds=+p --fields=+iaS --extras=+q .<CR>
+
+" mapping
+let mapleader = ";"
+map		<Leader>n	:noh<CR>
+
+map             <C-left>        :bprevious<CR>
+map             <C-right>       :bnext<CR>
+
+" commands
+command W w
+command Q q
+command Wq wq
+
+colorscheme molokai				" set up a color scheme in the gvim interface 
+syntax on					" active the syntaxic coloration

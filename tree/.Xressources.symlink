@@ -1,0 +1,66 @@
+! ~/.Xressources
+! author : meow
+! date : 23-01-2013
+
+! URxvt config ---------------------------------------------------------------
+URxvt*termName:                 rxvt-256color
+URxvt*font:                     xft:Monospace:regular:size=09:antialias=true
+URxvt.boldFont:                 xft:Monospace:bold:size=09
+URxvt.scrollBar:                false
+URxvt.saveLines:                65535
+URxvt.cursorBlink:              true
+! URxvt url handler
+URxvt.perl-ext-common:          default,url-select
+URxvt.keysym.M-u:               perl:url-select:select_next
+URxvt.url-select.launcher:      google-chrome-stable -new-tab
+URxvt.url-select.underline:     true
+
+! Global Color Scheme ----------------------------------------------------------
+*foreground:     	        #ffffff
+*background:     		#010101
+*colorBD:        		#7e6449
+*colorIT:        		#7c7e49
+*colorRV:        		#121212
+*colorUL:        		#ff8f00
+*fadeColor:      		#000016
+*borderColor:    		#1b1d1e
+*underlineColor: 		#de5105
+
+*pointerColor:                  DarkGrey
+*pointerColor2:                 DarkGrey
+*cursorColor:    		#e5e5e5
+*cursorColor2:   		#201526
+
+! Black
+*color0:   #000000
+*color8:   #555753
+
+! Red
+*color1:   #cc0000
+*color9:   #ef2929
+
+! Green
+*color2:   #4e9a06
+*color10:  #8ae234
+
+! Yellow
+*color3:   #c4a000
+*color11:  #fce94f
+
+! Blue
+*color4:   #3465a4
+*color12:  #0c73c2
+
+! Magenta
+*color5:   #75507b
+*color13:  #ad7fa8
+
+! Cyan
+*color6:   #06989a
+*color14:  #34e2e2
+
+! White
+*color7:   #d3d7cf
+*color15:  #eeeeec
+
+! vim: et sw=2 syn=xdefaults

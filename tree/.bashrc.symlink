@@ -1,0 +1,50 @@
+# ~/.bashrc
+# author : meow
+# date : 23-01-2013
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+# i'm root
+if [ $(id -u) -eq 0 ]; then 
+	PS1='[\[\e[01;31m\]\u\[\e[00m\]@\h:\[\e[01;32m\]\W\[\e[33m\]$(parse_git_branch)\[\e[00m\]]\$ '
+else
+	PS1='[\[\e[01;34m\]\u\[\e[00m\]@\h:\[\e[01;32m\]\W\[\e[33m\]$(parse_git_branch)\[\e[00m\]]\$ '
+fi
+
+# rules for new file / directory
+umask 022
+
+# append to the history file, don't overwrite it
+shopt -s histappend
+
+# LS
+eval `dircolors -b`
+export LS_OPTIONS='--color=auto'
+alias ls='ls $LS_OPTIONS'
+alias ll='ls $LS_OPTIONS -l'
+alias l='ls $LS_OPTIONS -lA'
+
+# CP & MV with progress bar patch
+alias acp='acp -g'
+alias amv='amv -g'
+
+# GREP
+alias grep="grep --color=auto"
+
+# let sudo use my alias too
+alias sudo='sudo '
+
+# show commits on top of HEAD
+alias tigl='tig HEAD^...HEAD'
+
+# env
+export PROMPT_COMMAND='echo -ne "\033]2;"`whoami`@`hostname`: $PWD"\007"'
+export EDITOR="vim"
+export DOSHELL="/bin/bash"
+export PATH=$PATH:~/bin:~/.npm/bin:~/.local/bin
+export NODE_PATH="$NODE_PATH:$HOME/.npm/lib/node_modules"
+
+# git completion
+[[ -f ~/.git-completion.bash  ]] && source ~/.git-completion.bash

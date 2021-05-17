@@ -1,0 +1,4 @@
+source /usr/share/gdb-dashboard/.gdbinit
+
+# remove protection to load gdb script
+add-auto-load-safe-path /
