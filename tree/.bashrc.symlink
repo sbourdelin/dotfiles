@@ -43,8 +43,8 @@ alias tigl='tig HEAD^...HEAD'
 export PROMPT_COMMAND='echo -ne "\033]2;"`whoami`@`hostname`: $PWD"\007"'
 export EDITOR="vim"
 export DOSHELL="/bin/bash"
-export PATH=$PATH:~/bin:~/.npm/bin:~/.local/bin
+export PATH=$PATH:~/bin:~/.npm/bin:~/.local/bin:~/.cargo/bin
 export NODE_PATH="$NODE_PATH:$HOME/.npm/lib/node_modules"
 
 # git completion
-[[ -f ~/.git-completion.bash  ]] && source ~/.git-completion.bash
+[[ -f /usr/share/git/completion/git-completion.bash ]] && source /usr/share/git/completion/git-completion.bash
