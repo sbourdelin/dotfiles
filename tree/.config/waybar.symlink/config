@@ -49,6 +49,17 @@
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
+    "custom/pacman": {
+        "format": "{} ",
+        "interval": 3600,                     // every hour
+        "exec": "pamac checkupdates -a -q | wc -l",       // # of updates
+        "on-click": "pamac-manager", // update system
+        "tooltip": false
+    },
+        "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
     "clock": {
         "format": "{:%a %d-%m-%y  %H:%M}"
     }
