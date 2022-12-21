@@ -1,4 +1,4 @@
-# i3 config file
+# sway config file
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
@@ -11,6 +11,15 @@ set $mod Mod4
 floating_modifier $mod
 # Turn off mouse following
 focus_follows_mouse no
+
+# -------------------------------------------- #
+# Keyboard layout
+# -------------------------------------------- #
+input * {
+    xkb_layout "us"
+    xkb_variant "altgr-intl"
+    xkb_options "grp:ctrl_alt"
+}
 
 # -------------------------------------------- #
 # Font
@@ -31,7 +40,6 @@ default_border pixel 4
 # -------------------------------------------- #
 bar {
         position top
-#status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
         swaybar_command waybar
 }
 
@@ -64,7 +72,8 @@ bindsym $mod+Shift+v exec "$HOME/bin/monitor_sway.sh"
 # -------------------------------------------- #
 # Lock screen
 # -------------------------------------------- #
-bindsym $mod+Shift+i exec "i3lock-fancy -p"
+#bindsym $mod+Shift+i exec "i3lock-fancy -p"
+bindsym $mod+Shift+i exec "swaylock -C ~/.config/swaylock/config"
 
 # -------------------------------------------- #
 # Scratchpad
@@ -81,6 +90,8 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+d exec rofi -show run
 # rofi show window
 bindsym $mod+Tab exec rofi -show window
+# rofimoji
+bindsym $mod+period exec rofi -modi "emoji:rofimoji" -show emoji
 
 # -------------------------------------------- #
 # Navigate
@@ -206,3 +217,10 @@ exec_always --no-startup-id com.github.bcedu.vgrive
 exec --no-startup-id udiskie --tray
 exec --no-startup-id nm-applet
 exec --no-startup-id "eval `gpg-agent --daemon`"
+exec --no-startup-id mako
+
+# for screen sharing with pipewire
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+# polkit agent for pamac-managui gui
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
