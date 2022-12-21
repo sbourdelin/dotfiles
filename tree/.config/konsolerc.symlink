@@ -15,8 +15,11 @@ Favorites=
 scrollbackUseCacheLocation=true
 scrollbackUseSystemLocation=false
 
+[General]
+ConfigVersion=1
+
 [KonsoleWindow]
-SaveGeometryOnExit=false
+RememberWindowSize=false
 ShowMenuBarByDefault=false
 
 [MainWindow]
@@ -25,6 +28,90 @@ ShowMenuBarByDefault=false
 State=AAAA/wAAAAD9AAAAAAAABPQAAAKyAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAIAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgAAAAAA/////wAAAAAAAAAAAAAAHABzAGUAcwBzAGkAbwBuAFQAbwBvAGwAYgBhAHIAAAAAAP////8AAAAAAAAAAA==
 StatusBar=Disabled
 ToolBarsMovable=Disabled
+eDP-1 DP-1 HDMI-A-2 Height 1920x1080=1080
+eDP-1 DP-1 HDMI-A-2 Width 1920x1080=1920
+eDP-1 DP-1 HDMI-A-2 Window-Maximized 1920x1080=true
+eDP-1 DP-1 Height 1920x1080=1080
+eDP-1 DP-1 Height 1920x1080 eDP-1=1440
+eDP-1 DP-1 Height 2560x1440=1440
+eDP-1 DP-1 Height 2560x1440 DP-1=1440
+eDP-1 DP-1 Width 1920x1080=1920
+eDP-1 DP-1 Width 1920x1080 eDP-1=2560
+eDP-1 DP-1 Width 2560x1440=2560
+eDP-1 DP-1 Width 2560x1440 DP-1=2560
+eDP-1 DP-1 Window-Maximized 1920x1080=true
+eDP-1 DP-1 Window-Maximized 1920x1080 eDP-1=true
+eDP-1 DP-1 Window-Maximized 2560x1440=true
+eDP-1 DP-1 Window-Maximized 2560x1440 DP-1=true
+eDP-1 DP-3 DP-4 Height 1920x1080=1440
+eDP-1 DP-3 DP-4 Height 2560x1440=1440
+eDP-1 DP-3 DP-4 Height 2560x1440 DP-3=1440
+eDP-1 DP-3 DP-4 Width 1920x1080=2560
+eDP-1 DP-3 DP-4 Width 2560x1440=2560
+eDP-1 DP-3 DP-4 Width 2560x1440 DP-3=2560
+eDP-1 DP-3 DP-4 Window-Maximized 1920x1080=true
+eDP-1 DP-3 DP-4 Window-Maximized 1920x1080 DP-4=true
+eDP-1 DP-3 DP-4 Window-Maximized 1920x1080 eDP-1=true
+eDP-1 DP-3 DP-4 Window-Maximized 2560x1440=true
+eDP-1 DP-3 DP-4 Window-Maximized 2560x1440 DP-3=true
+eDP-1 DP-3 DP-5 Height 1920x1080=1440
+eDP-1 DP-3 DP-5 Height 2560x1440=1440
+eDP-1 DP-3 DP-5 Width 1920x1080=2560
+eDP-1 DP-3 DP-5 Width 2560x1440=2560
+eDP-1 DP-3 DP-5 Window-Maximized 1920x1080=true
+eDP-1 DP-3 DP-5 Window-Maximized 2560x1440=true
+eDP-1 DP-3 Window-Maximized 1920x1080=true
+eDP-1 DP-4 DP-3 Height 1920x1080=1440
+eDP-1 DP-4 DP-3 Height 2560x1440=1440
+eDP-1 DP-4 DP-3 Width 1920x1080=2560
+eDP-1 DP-4 DP-3 Width 2560x1440=2560
+eDP-1 DP-4 DP-3 Window-Maximized 1920x1080=true
+eDP-1 DP-4 DP-3 Window-Maximized 1920x1080 eDP-1=true
+eDP-1 DP-4 DP-3 Window-Maximized 2560x1440=true
+eDP-1 DP-4 HDMI-A-2 Height 1920x1080=1080
+eDP-1 DP-4 HDMI-A-2 Width 1920x1080=1920
+eDP-1 DP-4 HDMI-A-2 Window-Maximized 1920x1080=true
+eDP-1 DP-4 Height 1920x1080=1080
+eDP-1 DP-4 Width 1920x1080=1920
+eDP-1 DP-4 Window-Maximized 1920x1080=true
+eDP-1 DP-4 Window-Maximized 1920x1080 eDP-1=true
+eDP-1 DP-5 DP-3 Height 1920x1080=1080
+eDP-1 DP-5 DP-3 Height 2560x1440=1440
+eDP-1 DP-5 DP-3 Width 1920x1080=1920
+eDP-1 DP-5 DP-3 Width 2560x1440=2560
+eDP-1 DP-5 DP-3 Window-Maximized 1920x1080=true
+eDP-1 DP-5 DP-3 Window-Maximized 2560x1440=true
+eDP-1 DP-5 DP-6 Height 2560x1440=1440
+eDP-1 DP-5 DP-6 Width 2560x1440=2560
+eDP-1 DP-5 DP-6 Window-Maximized 1920x1080=true
+eDP-1 DP-5 DP-6 Window-Maximized 2560x1440=true
+eDP-1 DP-5 Window-Maximized 1920x1080=true
+eDP-1 DP-6 DP-5 Height 1920x1080=1440
+eDP-1 DP-6 DP-5 Height 2560x1440=1440
+eDP-1 DP-6 DP-5 Width 1920x1080=2560
+eDP-1 DP-6 DP-5 Width 2560x1440=2560
+eDP-1 DP-6 DP-5 Window-Maximized 2560x1440=true
+eDP-1 DP-6 Window-Maximized 1920x1080=true
+eDP-1 HDMI-A-2 DP-4 Window-Maximized 1920x1080=true
+eDP-1 HDMI-A-2 Height 1920x1080=1080
+eDP-1 HDMI-A-2 Height 2560x1440=1440
+eDP-1 HDMI-A-2 Width 1920x1080=1920
+eDP-1 HDMI-A-2 Width 2560x1440=2560
+eDP-1 HDMI-A-2 Window-Maximized 1920x1080=true
+eDP-1 HDMI-A-2 Window-Maximized 1920x1080 eDP-1=true
+eDP-1 HDMI-A-2 Window-Maximized 2560x1440=true
+eDP-1 Height 1920x1080=1080
+eDP-1 Width 1920x1080=1920
+eDP-1 Window-Maximized 1920x1080=true
+eDP-1 Window-Maximized 1920x1080 eDP-1=true
+eDP1 DP1 Height 1920x1080=513
+eDP1 DP1 Height 2560x1440=1397
+eDP1 DP1 Width 1920x1080=942
+eDP1 DP1 Width 2560x1440=1262
+eDP1 DP1 XPosition 1920x1080=966
+eDP1 DP1 XPosition 2560x1440=3206
+eDP1 DP1 YPosition 1920x1080=555
+eDP1 DP1 YPosition 2560x1440=31
 
 [Shortcut Schemes]
 Current Scheme=meow
@@ -34,3 +121,6 @@ SplitViewVisibility=AlwaysHideSplitHeader
 
 [TabBar]
 TabBarVisibility=AlwaysHideTabBar
+
+[UiSettings]
+ColorScheme=
