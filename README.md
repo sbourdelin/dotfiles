@@ -14,6 +14,14 @@
 * radare2
 * rofi
 * sway
+* swaylock
 * tig
 * vim
 * waybar
+
+## requirements
+* rofimoji
+* mako
+* swaylock
+* polkit polkit-gnome
+* pipewire
