@@ -1,11 +1,16 @@
 [user]
 	name = Sebastien Bourdelin
-	email = sebastien.bourdelin@gmail.com
+	email = sebastien.bourdelin@rtone.fr
+	#email = sebastien.bourdelin@gmail.com
 [push]
 	default = current
 [sendemail]
 	smtpserver = /usr/bin/msmtp
 	confirm = auto
+	#smtpserver = smtp.gmail.com
+	#smtpserverport = 587
+	#smtpencryption = tls
+	#smtpuser = sebastien.bourdelin@gmail.com
 [color]
 	ui = true
 [alias]
@@ -29,3 +34,5 @@
 	username = sbourdelin
 [gc]
 	autoDetach = false
+[init]
+	defaultBranch = main
