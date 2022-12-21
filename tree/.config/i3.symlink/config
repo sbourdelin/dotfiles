@@ -31,11 +31,11 @@ smart_borders on
 # -------------------------------------------- #
 # Bar
 # -------------------------------------------- #
-# bar {
-#         position top
-#         status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
-# }
-exec_always --no-startup-id $HOME/.config/polybar/launch.sh --hack
+bar {
+        position top
+        status_command i3blocks -c $HOME/.config/i3/i3blocks.conf
+}
+#exec_always --no-startup-id $HOME/.config/polybar/launch.sh --hack
 
 # -------------------------------------------- #
 # color scheme : border backgr text indicator
@@ -63,7 +63,7 @@ bindsym $mod+Return exec konsole
 # -------------------------------------------- #
 # Monitor
 # -------------------------------------------- #
-bindsym $mod+Shift+v exec "$HOME/bin/monitor.sh"
+bindsym $mod+Shift+v exec "$HOME/bin/monitor2.sh"
 
 # -------------------------------------------- #
 # Lock screen
