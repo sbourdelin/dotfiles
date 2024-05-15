@@ -6,7 +6,6 @@
 * gdb
 * git
 * gnupg
-* i3gasp
 * konsole
 * mail
 * msmtp
