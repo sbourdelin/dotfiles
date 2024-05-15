@@ -46,5 +46,10 @@ export DOSHELL="/bin/bash"
 export PATH=$PATH:~/bin:~/.npm/bin:~/.local/bin:~/.cargo/bin
 export NODE_PATH="$NODE_PATH:$HOME/.npm/lib/node_modules"
 
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # git completion
 [[ -f /usr/share/git/completion/git-completion.bash ]] && source /usr/share/git/completion/git-completion.bash
