@@ -1,19 +1,31 @@
 * {
-	border: none;
-	border-radius: 0;
-	font-family: monospace;
-	font-size: 9pt;
-	min-height: 0;
+    font-family: 'Noto Sans Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands', monospace;
+    font-size: 13px;
 }
 
-window {
-	background: #32302f;
-	color: #ebdbb2;
+window#waybar {
+    background-color: rgba(43, 48, 59, 0.5);
+    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    color: #ffffff;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    /* Use box-shadow instead of border so the text isn't offset */
+    box-shadow: inset 0 -3px transparent;
+    /* Avoid rounded borders under each button name */
+    border: none;
+    border-radius: 0;
 }
 
 #workspaces button {
-	padding: 0 5px;
-	border: 1px solid transparent;
+    padding: 0 5px;
+    border: 1px solid transparent;
     color: #ebdbb2
 }
 #workspaces button.visible { border: 1px solid #a89984; }
@@ -26,7 +38,3 @@ window {
     margin: 0 4px;
 }
 
-#window {
-	margin: 0 1em;
-	border-bottom: 1px solid #8ec07c;
-}
