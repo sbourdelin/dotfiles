@@ -51,5 +51,9 @@ export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
 
-# git completion
-[[ -f /usr/share/git/completion/git-completion.bash ]] && source /usr/share/git/completion/git-completion.bash
+# Start the bash_completion scripts in non login shell
+# the SDDM greeter, used by defaut in Fedora, starts bash --login which is fine,
+# however on non login bash, the bash-completion scripts aren't load as the /etc/profile is not executed.
+# To fix it, we explicitly start the bash-completion script.
+[[ -f /etc/profile.d/bash_completion.sh ]] && source /etc/profile.d/bash_completion.sh
+

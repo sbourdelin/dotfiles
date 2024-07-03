@@ -24,3 +24,4 @@
 * swaylock
 * polkit polkit-gnome
 * pipewire
+* bash-completion
