@@ -25,3 +25,4 @@
 * polkit polkit-gnome
 * pipewire
 * bash-completion
+* alacritty

@@ -57,3 +57,7 @@ eval "$(pyenv init -)"
 # To fix it, we explicitly start the bash-completion script.
 [[ -f /etc/profile.d/bash_completion.sh ]] && source /etc/profile.d/bash_completion.sh
 
+# Alacritty ssh colorized workaround
+# As alacritty is still new, it's not always part of the default terminfo on remote hosts.
+# To fix it, we add an alias to overwrite the TERM variable when using ssh.
+alias ssh='TERM=xterm-256color ssh'
