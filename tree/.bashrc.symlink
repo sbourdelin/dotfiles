@@ -43,9 +43,20 @@ alias tigl='tig HEAD^...HEAD'
 export PROMPT_COMMAND='echo -ne "\033]2;"`whoami`@`hostname`: $PWD"\007"'
 export EDITOR="vim"
 export DOSHELL="/bin/bash"
-export PATH=$PATH:~/bin:~/bin/flatpak:~/.npm/bin:~/.local/bin:~/.cargo/bin
-export NODE_PATH="$NODE_PATH:$HOME/.npm/lib/node_modules"
 
+# PATH
+export PATH=$PATH:~/bin:~/.local/bin
+# node binaries
+export PATH=$PATH:~/.npm/bin
+# cargo binaries
+export PATH=$PATH:~/.cargo/bin
+# flatpak
+export PATH=$PATH:~/bin/flatpak
+# toolchains
+export PATH=$PATH:~/t/bin
+
+# npm
+export NODE_PATH="$NODE_PATH:$HOME/.npm/lib/node_modules"
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
