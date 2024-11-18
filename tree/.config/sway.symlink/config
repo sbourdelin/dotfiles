@@ -60,6 +60,7 @@ bar {
 # -------------------------------------------- #
 client.focused  #f97f04 #f97f04 #ffffff #2e9ef4
 client.urgent   #FF4C1F #F9513F #FFFFFF #900000
+output * bg #454545 solid_color
 
 # -------------------------------------------- #
 # Bindings
