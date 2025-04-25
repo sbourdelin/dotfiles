@@ -96,14 +96,6 @@ function! Indent8Tab()
   set noexpandtab
 endfunction
 
-" sflphone style indentation
-function! Indent4Space()
-  set tabstop=4
-  set softtabstop=4
-  set shiftwidth=4
-  set expandtab
-endfunction
-
 " use to detect when line is greater then 80 char
 let g:c_80_detect = 0
 function! Change80Detect()
@@ -115,6 +107,14 @@ function! Change80Detect()
     let g:c_80_detect = 1
   endif
 endfunction
+
+""""""""Git commit message""""""""
+augroup gitcommit_spell
+  autocmd!
+  autocmd FileType gitcommit setlocal spell
+  autocmd FileType gitcommit setlocal spelllang=en_us
+  autocmd FileType gitcommit setlocal textwidth=72
+augroup END
 
 """"""""mapping""""""""
 "
