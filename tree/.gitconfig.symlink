@@ -50,3 +50,5 @@
 	conflictstyle = merge
 [mergetool "vscode"]
 	cmd = code --wait $MERGED
+[core]
+	editor = vim
