@@ -27,6 +27,7 @@ input * {
 input type:touchpad {
     tap enabled
     natural_scroll enabled
+    scroll_factor 4.0
 }
 
 # Allow switching between workspaces with left and right swipes
