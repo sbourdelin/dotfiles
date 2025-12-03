@@ -86,8 +86,7 @@ bindsym $mod+Shift+v exec "$HOME/bin/wl-monitor.sh"
 # -------------------------------------------- #
 # Lock screen
 # -------------------------------------------- #
-#bindsym $mod+Shift+i exec "i3lock-fancy -p"
-bindsym $mod+Shift+i exec "swaylock -C ~/.config/swaylock/config"
+bindsym $mod+Shift+i exec "swaylock -c 000000"
 
 # -------------------------------------------- #
 # Scratchpad
