@@ -103,8 +103,8 @@ bindsym $mod+minus scratchpad show
 bindsym $mod+d exec rofi -show run
 # rofi show window
 bindsym $mod+Tab exec rofi -show window
-# rofimoji
-bindsym $mod+period exec rofi -modi "emoji:rofimoji" -show emoji
+# wofi-emoji
+bindsym $mod+period exec ~/bin/wofi-emoji
 
 # -------------------------------------------- #
 # Navigate
